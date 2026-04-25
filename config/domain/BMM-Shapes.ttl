@@ -236,6 +236,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:End ;
   oslc:inversePropertyDefinition bmm:enabledBy ;
   oslc:inverseLabel "Enabled By" .
 
@@ -251,6 +252,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:End ;
   oslc:inversePropertyDefinition bmm:achievementAffectedBy ;
   oslc:inverseLabel "Achievement Affected By" .
 
@@ -262,6 +264,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:Means ;
   oslc:inversePropertyDefinition bmm:employmentAffectedBy ;
   oslc:inverseLabel "Employment Affected By" .
 
@@ -277,6 +280,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:End ;
   oslc:inversePropertyDefinition bmm:responsibilityOf ;
   oslc:inverseLabel "Responsibility Of" .
 
@@ -288,6 +292,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:Means ;
   oslc:inversePropertyDefinition bmm:establishedBy ;
   oslc:inverseLabel "Established By" .
 
@@ -299,6 +304,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:Influencer ;
   oslc:inversePropertyDefinition bmm:recognizedBy ;
   oslc:inverseLabel "Recognized By" .
 
@@ -310,6 +316,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:Assessment ;
   oslc:inversePropertyDefinition bmm:madeBy ;
   oslc:inverseLabel "Made By" .
 
@@ -321,6 +328,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:BusinessProcess ;
   oslc:inversePropertyDefinition bmm:defines ;
   oslc:inverseLabel "Defines" .
 
@@ -332,6 +340,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:OrganizationUnit ;
   oslc:inversePropertyDefinition bmm:parentOrganizationUnit ;
   oslc:inverseLabel "Parent Organization Unit" .
 
@@ -343,10 +352,11 @@
   a oslc:Property ;
   oslc:name "amplifiedBy" ;
   oslc:propertyDefinition bmm:amplifiedBy ;
-  dcterms:description "The Mission that amplifies this Vision." ;
-  oslc:occurs oslc:Zero-or-one ;
+  dcterms:description "Goals that amplify this Vision into more specific desired results." ;
+  oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:Goal ;
   oslc:inversePropertyDefinition bmm:amplifies ;
   oslc:inverseLabel "Amplifies" .
 
@@ -354,10 +364,11 @@
   a oslc:Property ;
   oslc:name "madeOperativeBy" ;
   oslc:propertyDefinition bmm:madeOperativeBy ;
-  dcterms:description "Goals that make this Vision operative." ;
-  oslc:occurs oslc:Zero-or-many ;
+  dcterms:description "The Mission that makes this Vision operative." ;
+  oslc:occurs oslc:Zero-or-one ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:Mission ;
   oslc:inversePropertyDefinition bmm:makesOperative ;
   oslc:inverseLabel "Makes Operative" .
 
@@ -373,6 +384,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:Objective ;
   oslc:inversePropertyDefinition bmm:quantifies ;
   oslc:inverseLabel "Quantifies" .
 
@@ -384,6 +396,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:Goal ;
   oslc:inversePropertyDefinition bmm:includedInGoal ;
   oslc:inverseLabel "Included In" .
 
@@ -399,6 +412,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:Objective ;
   oslc:inversePropertyDefinition bmm:includedInObjective ;
   oslc:inverseLabel "Included In" .
 
@@ -430,6 +444,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:End ;
   oslc:inversePropertyDefinition bmm:effortsChanneledBy ;
   oslc:inverseLabel "Efforts Channeled By" .
 
@@ -441,6 +456,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:Strategy ;
   oslc:inversePropertyDefinition bmm:includedInStrategy ;
   oslc:inverseLabel "Included In" .
 
@@ -456,6 +472,7 @@
   oslc:occurs oslc:Zero-or-one ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:Strategy ;
   oslc:inversePropertyDefinition bmm:implementedBy ;
   oslc:inverseLabel "Implemented By" .
 
@@ -467,6 +484,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:Tactic ;
   oslc:inversePropertyDefinition bmm:includedInTactic ;
   oslc:inverseLabel "Included In" .
 
@@ -478,6 +496,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:BusinessRule ;
   oslc:inversePropertyDefinition bmm:enforcementEffectedBy ;
   oslc:inverseLabel "Enforcement Effected By" .
 
@@ -493,6 +512,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:CourseOfAction ;
   oslc:inversePropertyDefinition bmm:governedBy ;
   oslc:inverseLabel "Governed By" .
 
@@ -508,6 +528,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:BusinessProcess ;
   oslc:inversePropertyDefinition bmm:processGovernedBy ;
   oslc:inverseLabel "Process Governed By" .
 
@@ -523,6 +544,7 @@
   oslc:occurs oslc:Zero-or-one ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:BusinessPolicy ;
   oslc:inversePropertyDefinition bmm:basisFor ;
   oslc:inverseLabel "Basis For" .
 
@@ -534,6 +556,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:BusinessProcess ;
   oslc:inversePropertyDefinition bmm:enforces ;
   oslc:inverseLabel "Enforces" .
 
@@ -569,6 +592,7 @@
   oslc:occurs oslc:Exactly-one ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:Influencer ;
   oslc:inversePropertyDefinition bmm:assessedBy ;
   oslc:inverseLabel "Assessed By" .
 
@@ -580,6 +604,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:PotentialImpact ;
   oslc:inversePropertyDefinition bmm:identifiedBy ;
   oslc:inverseLabel "Identified By" .
 
@@ -604,6 +629,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:Directive ;
   oslc:inversePropertyDefinition bmm:impelledBy ;
   oslc:inverseLabel "Impelled By" .
 
@@ -615,6 +641,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:End ;
   oslc:inversePropertyDefinition bmm:atRiskFrom ;
   oslc:inverseLabel "At Risk From" .
 
@@ -626,6 +653,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:Means ;
   oslc:inversePropertyDefinition bmm:atRiskFrom ;
   oslc:inverseLabel "At Risk From" .
 
@@ -637,6 +665,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:End ;
   oslc:inversePropertyDefinition bmm:potentialRewardFrom ;
   oslc:inverseLabel "Potential Reward From" .
 
@@ -648,6 +677,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:Means ;
   oslc:inversePropertyDefinition bmm:potentialRewardFrom ;
   oslc:inverseLabel "Potential Reward From" .
 
@@ -659,10 +689,11 @@
   a oslc:Property ;
   oslc:name "realizes" ;
   oslc:propertyDefinition bmm:realizes ;
-  dcterms:description "Assets used by this BusinessProcess." ;
+  dcterms:description "A Tactic that this BusinessProcess realizes." ;
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:Tactic ;
   oslc:inversePropertyDefinition bmm:realizedBy ;
   oslc:inverseLabel "Realized By" .
 
@@ -674,6 +705,7 @@
   oslc:occurs oslc:Zero-or-many ;
   oslc:valueType oslc:Resource ;
   oslc:representation oslc:Reference ;
+  oslc:range bmm:BusinessRule ;
   oslc:inversePropertyDefinition bmm:governsProcessVia ;
   oslc:inverseLabel "Governs Process" .
 

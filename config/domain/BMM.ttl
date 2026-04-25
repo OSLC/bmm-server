@@ -191,19 +191,19 @@ bmm:InfluencerCategoryType-Threat
 # as triples, so they are not declared here.
 # ============================================================
 
-# Vision → Mission
+# Vision → Goal
 bmm:amplifiedBy
   a rdf:Property ;
   rdfs:domain bmm:Vision ;
-  rdfs:range bmm:Mission ;
-  dc11:description "The Mission that amplifies this Vision." .
+  rdfs:range bmm:Goal ;
+  dc11:description "A Goal that amplifies this Vision into more specific desired results." .
 
-# Vision → Goal
+# Vision → Mission
 bmm:madeOperativeBy
   a rdf:Property ;
   rdfs:domain bmm:Vision ;
-  rdfs:range bmm:Goal ;
-  dc11:description "A Goal that makes this Vision operative — indicates what must be done to make the Vision a reality." .
+  rdfs:range bmm:Mission ;
+  dc11:description "The Mission that makes this Vision operative — indicates what must be done to make the Vision a reality." .
 
 # Goal → Objective
 bmm:quantifiedBy
@@ -421,8 +421,8 @@ bmm:subOrganizationUnits
 bmm:realizes
   a rdf:Property ;
   rdfs:domain bmm:BusinessProcess ;
-  rdfs:range bmm:Asset ;
-  dc11:description "An Asset that this BusinessProcess uses or realizes." .
+  rdfs:range bmm:Tactic ;
+  dc11:description "A Tactic that this BusinessProcess realizes." .
 
 bmm:governedByBusinessRule
   a rdf:Property ;
